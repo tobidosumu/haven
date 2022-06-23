@@ -1,0 +1,15 @@
+Microsoft Windows [Version 10.0.19044.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\USER>cd desktop
+
+C:\Users\USER\Desktop>cd haven
+
+C:\Users\USER\Desktop\Haven>cd ..
+
+C:\Users\USER\Desktop>git config --global user.name "Oloruntobi Ogundosumu"
+
+C:\Users\USER\Desktop>git config --global user.email "dosunmumishael@gmail.com"
+
+C:\Users\USER\Desktop>
+
