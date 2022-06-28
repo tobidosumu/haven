@@ -1,0 +1,282 @@
+* p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li::marker {
+   color: #fff;
+}
+
+input, select {
+    outline: none;
+}
+
+body {
+    background: #3FA9F5 url("../img/bg-pc-pattern.png") repeat center;
+    font-family: 'Libre Franklin', sans-serif, 'Libre Baskerville', serif;
+}
+
+/* Header */
+header {
+    height: 100px;
+    background-color: #fff;
+    /* box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.164); */
+}
+
+/* Logo div */
+.logo {
+    width: 35%;
+}
+
+/* Style the search field */
+#selectCategories {
+    width: 68%;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-left: 5%;
+    border: none;
+    border-radius: 50px 0 0 50px;
+}
+
+.searchForm {
+    display: flex;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.searchBox {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+::placeholder {
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+::-ms-input-placeholder {
+    color: #000;
+}
+
+.searchBox input[type=search] {
+    width: 100%;
+    padding: 14px;
+    color: #000;
+    border: 1px solid #fff;
+    border-left: 1px solid #000;
+    padding-left: 5%;
+    margin-left: 3%;
+}
+
+.searchIcon {
+    width: 40px;
+}
+  
+.searchBtn {
+    width: 55px;
+    padding: 3px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: #3FA9F5;
+    cursor: pointer; 
+}
+  
+/* navigation menu starts here */
+nav {
+    /* border: 1px solid red; */
+}
+
+/* donate and create buttons nav starts here */
+nav .donateNav {
+    width: 50%;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+nav .donateNav a {
+    color: #000;
+}
+
+nav .donateNav li a, nav .donateNav li {
+    padding: 14px;
+
+}
+
+nav .donateNav li:first-child {
+    border-right: 2px solid #000;
+    padding-right: 0px;
+}
+
+nav .donateNav li:nth-child(2) {
+    padding-left: 0px;
+}
+
+/* dark mode and user icon wrapper starts here */
+.darkModeUserIconsUlWrapper {
+    width: 50%;
+    padding-left: 12%;
+}
+
+/* dark mode icon starts here */
+.darkModeIconUl img {
+    width: 45px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F5F5F5;
+}
+
+/* menu icon and user icon ul starts here */
+.menuIconUserIconUl {
+    display: flex;
+    width: 100%;
+    /* margin-left: 10%; */
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #F5F5F5;
+    border-radius: 50px;
+    /* border: 1px solid green; */
+}
+
+.menuIconUserIconUl img {
+    width: 30px;
+}
+
+.menuIconUserIconUl li:nth-child(2) {
+    margin-left: 15%;
+}
+
+#hero {
+    width: 100%;
+}
+
+/* hero starts here */
+.slideshow a {
+    display: flex;
+    flex-wrap: wrap;
+    height: 65vh;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+/* slider arrows */
+.sliderArrowsWrapper {
+    width: 100%;
+    height: 65vh;
+    position: absolute; 
+    z-index: 2;
+    opacity: 0;
+}
+
+.sliderArrowDiv {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0 1.5px rgba(0, 0, 0, 0.5);
+}
+
+.sliderArrowDiv:nth-child(2) {
+    box-shadow: -2px 0 1.5px rgba(0, 0, 0, 0.5);
+} 
+
+.sliderArrowsWrapper:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.sliderArrowIcon {
+    width: 3rem;
+}
+
+/* slide image */
+.slideOne {
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    object-position: 0% 63%;
+    opacity: 0.6;
+}
+
+.sliderContents {
+    width: 90%;
+    position: absolute; 
+    bottom: 170px;
+    left: 5%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3em;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.sliderTexts {
+    width: 33%;
+    display: flex;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.sliderDotsWrapper {
+    width: 33%;
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.sliderDot {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.sliderDot:nth-child(4) {
+    background-color: #3FA9F5;
+}
+
+.emptyDiv {
+    width: 33%;
+    display: flex;
+}
+
+/* Call to action buttons wrappper */
+.ctaBtnsWrapper {
+    width: 90%;
+    /* border: 2px solid blue; */
+}
+
+.ctaBtn {
+    font-size: 25px;
+    color: #3FA9F5;
+    font-weight: 600;
+    padding: 20px 25px;
+}
+
+.ctaBtn:hover {
+    color: #FF1D25;
+}
