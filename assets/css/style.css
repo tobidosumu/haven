@@ -1,9 +1,22 @@
-* p {
+*, p, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+/* my bootstrap  */
+.pr-6 {
+    padding-right: 6.5%;
+}
+
+.pl-6 {
+    padding-left: 6.5%;
+}
+
+.pt-6 {
+    padding-top: 4.1%;
 }
 
 ul li::marker {
@@ -270,7 +283,6 @@ nav .donateNav li:nth-child(2) {
 /* Call to action buttons and categories menu wrappper */
 .cta_btns_and_categoriesMenu_wrapper {
     width: 100%;
-    border: 2px solid black;
     background: #3FA9F5 url("../img/bg-pc-pattern.png") repeat center;
 }
 .ctaBtnsWrapper {
@@ -283,13 +295,13 @@ nav .donateNav li:nth-child(2) {
 
 .ctaBtn {
     font-size: 25px;
-    color: #3FA9F5;
-    font-weight: 600;
+    color: #FF1D25;
+    font-weight: 500;
     padding: 20px 25px;
 }
 
 .ctaBtn:hover {
-    color: #FF1D25;
+    color: #3FA9F5;
 }
 
 /* <!-- categories page starts here --> */
@@ -300,38 +312,40 @@ nav .donateNav li:nth-child(2) {
 
 .categoriesMenuWrapper {
     width: 100%;
-    padding: 60px 10%;
     display: flex;
+    color: #fff;
+    font-size: 15.5px;
+    padding: 30px 10%;
     align-items: center;
-    border: 2px solid red;
 }
 
-.firstMenuContainer {
-    width: 30%;
+.leftAndRightMenuContainers {
+    width: 31%;
     display: flex;
-    padding-right: 7%;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid green;
 }
 
-.lastMenuContainer {
-    width: 30%;
+.leftAndRightControl {
+    height: 86px;
     display: flex;
-    padding-left: 7%;
+    cursor: pointer; 
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
-    border: 2px solid green;
+}
+
+.leftAndRightControl > img {
+    width: 43px;
 }
 
 .categoriesNavArrowDiv > img {
-    width: 12px;
+    width: 10px;
 }
 
 .categoriesNavArrowDiv {
-    width: 50px;
-    height: 50px;
-    /* padding: 6px 8px; */
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,29 +355,89 @@ nav .donateNav li:nth-child(2) {
 }
 
 .catmenuContainer {
-    width: 40%;
+    width: 38%;
+    height: 130px;
     display: flex;
-    justify-content: space-between;
-    /* border: 2px solid green; */
     align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
 }
 
 .catmenuContainer > div {
+    height: 100%;
+    padding: 5% 2%;
     display: flex;
-    flex-direction: column;
+    cursor: pointer; 
     align-items: center;
-    /* border: 2px solid green; */
-
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.catmenuContainer img {
+.catmenuContainer > div:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catmenuContainer > div:nth-child(3) {
+    padding: 5% 4%;
+}
+
+.catmenuContainer > div:nth-child(4) {
+    padding: 5% 2.6%;
+    color: #3FA9F5;
+    background-color: #fff;
+}
+
+.catmenuContainer > div > img {
     width: 42px;
 }
 
-.favoritesContainer {
+.trendingDiv > img {
+    width: 32px !important;
+}
+
+/* charity feeds starts */
+.feedsWrapper {
+    width: 82%;
+}
+
+.card{
+    width: 18.5%;
+    cursor: pointer;
+    border: none;
+}
+
+.photoWrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* border: 2px solid green; */
+}
+
+.heartIcon {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+}
+
+.photoWrapper > img {
+    width: 100%;
+    border-radius: 6%;
+    box-shadow: none;
+}
+
+.detailsWrapper {
+    width: 100%;
+    padding-top: 15px;
+    /* border: 2px solid darkorange; */
+}
+
+.detailsWrapper > h2 {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+} 
+
+.detailsWrapper > p {
+    color: #839BB1;
+    font-size: 11px;
+    /* font-weight: 800; */
+    line-height: 1.3em;
 }
 
