@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+ul li::marker {
+    font-size: 0;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -19,7 +23,7 @@ input, select {
 }
 
 body {
-    background: #3FA9F5 url("../img/bg-pc-pattern.png") repeat center;
+    background-color: #fff;
     font-family: 'Libre Franklin', sans-serif, 'Libre Baskerville', serif;
 }
 
@@ -92,7 +96,6 @@ header {
     padding: 3px;
     color: #fff;
     font-size: 20px;
-    border-radius: 50px;
     border: none;
     border-radius: 50px;
     background-color: #3FA9F5;
@@ -106,7 +109,7 @@ nav {
 
 /* donate and create buttons nav starts here */
 nav .donateNav {
-    width: 50%;
+    width: 60%;
     display: flex;
     font-size: 16px;
     font-weight: 600;
@@ -124,8 +127,8 @@ nav .donateNav li a, nav .donateNav li {
 }
 
 nav .donateNav li:first-child {
-    border-right: 2px solid #000;
-    padding-right: 0px;
+    border-right: 1px solid #000;
+    padding-right: 4%;
 }
 
 nav .donateNav li:nth-child(2) {
@@ -134,14 +137,13 @@ nav .donateNav li:nth-child(2) {
 
 /* dark mode and user icon wrapper starts here */
 .darkModeUserIconsUlWrapper {
-    width: 50%;
-    padding-left: 12%;
+    width: 45%;
 }
 
 /* dark mode icon starts here */
 .darkModeIconUl img {
     width: 45px;
-    padding: 10px;
+    padding: 12px;
     border-radius: 50px;
     background-color: #F5F5F5;
 }
@@ -150,13 +152,12 @@ nav .donateNav li:nth-child(2) {
 .menuIconUserIconUl {
     display: flex;
     width: 100%;
-    /* margin-left: 10%; */
     justify-content: center;
     align-items: center;
     padding: 12px;
+    margin-left: 12%;
     background-color: #F5F5F5;
     border-radius: 50px;
-    /* border: 1px solid green; */
 }
 
 .menuIconUserIconUl img {
@@ -167,11 +168,13 @@ nav .donateNav li:nth-child(2) {
     margin-left: 15%;
 }
 
-#hero {
+/* end of header */
+
+/* hero starts here */
+.hero {
     width: 100%;
 }
 
-/* hero starts here */
 .slideshow a {
     display: flex;
     flex-wrap: wrap;
@@ -264,10 +267,18 @@ nav .donateNav li:nth-child(2) {
     display: flex;
 }
 
-/* Call to action buttons wrappper */
+/* Call to action buttons and categories menu wrappper */
+.cta_btns_and_categoriesMenu_wrapper {
+    width: 100%;
+    border: 2px solid black;
+    background: #3FA9F5 url("../img/bg-pc-pattern.png") repeat center;
+}
 .ctaBtnsWrapper {
-    width: 90%;
-    /* border: 2px solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 10%;
+    margin: auto;
 }
 
 .ctaBtn {
@@ -280,3 +291,79 @@ nav .donateNav li:nth-child(2) {
 .ctaBtn:hover {
     color: #FF1D25;
 }
+
+/* <!-- categories page starts here --> */
+.categoriesPage {
+    width: 100%;
+    height: 600px;
+}
+
+.categoriesMenuWrapper {
+    width: 100%;
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.firstMenuContainer {
+    width: 30%;
+    display: flex;
+    padding-right: 7%;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid green;
+}
+
+.lastMenuContainer {
+    width: 30%;
+    display: flex;
+    padding-left: 7%;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid green;
+}
+
+.categoriesNavArrowDiv > img {
+    width: 12px;
+}
+
+.categoriesNavArrowDiv {
+    width: 50px;
+    height: 50px;
+    /* padding: 6px 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #fff;
+    cursor: pointer; 
+}
+
+.catmenuContainer {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+    align-items: center;
+}
+
+.catmenuContainer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid green; */
+
+}
+
+.catmenuContainer img {
+    width: 42px;
+}
+
+.favoritesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+

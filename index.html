@@ -42,18 +42,19 @@
             <div class="col-sm-5 menuContainer">
                 <!-- donate and create buttons -->
                 <nav class="d-flex align-items-center">
-                    <ul class="my-auto donateNav d-flex justify-content-around">
+                    <ul class="donateNav d-flex justify-content-around my-auto">
                         <li><a href="#">create</a></li>
                         <li><a href="#">donate</a></li>
                     </ul>
 
                     <!-- night-mode icon div -->
-                    <div class="my-auto d-flex darkModeUserIconsUlWrapper">
+                    <div class="darkModeUserIconsUlWrapper d-flex justify-content-between my-auto">
                         <ul class="my-auto darkModeIconUl">
                             <li><a href="#"><img class="darkModeIcon" src="./assets/img/icons/night_mode.png" alt="switch to dark mode"></a></li>
                         </ul>
                         <!-- menu and user icons -->
-                        <ul class="my-auto menuIconUserIconUl"> 
+
+                        <ul class="menuIconUserIconUl my-auto d-flex justify-content-center align-items-center"> 
                             <li><a href="#"><img class="menuIcon" src="./assets/img/icons/menu_bars.svg"></a></li>
                             <li><a href="#"><img class="userIcon" src="./assets/img/icons/user_icon.png"></a></li>
                         </ul>
@@ -63,7 +64,7 @@
         </header>
 
         <!-- hero/slider starts here -->
-        <section id="hero">
+        <section class="hero">
             <div class="slideshow">
                 <a href="#">
                     <!-- slider arrows wrapper -->
@@ -100,12 +101,74 @@
             </div>
 
             <!-- call to action buttons wrapper -->
-            <div class="ctaBtnsWrapper d-flex mx-auto justify-content-around py-5 my-3">
-                <button class="btn btn-light btn-lg rounded-pill shadow p-3 mb-5 bg-white rounded ctaBtn"><a class="ctaBtn" href="#">Create a cause</a></button>
-                <button class="btn btn-light btn-lg rounded-pill shadow p-3 mb-5 bg-white rounded ctaBtn"><a class="ctaBtn" href="#">Make a donation</a></button>
-            </div>
+            <div class="cta_btns_and_categoriesMenu_wrapper">
+                <div class="ctaBtnsWrapper">
+                    <button class="btn btn-light btn-lg rounded-pill shadow p-3 bg-white rounded ctaBtn"><a class="ctaBtn" href="#">Create a cause</a></button>
+                    <button class="btn btn-light btn-lg rounded-pill shadow p-3 bg-white rounded ctaBtn"><a class="ctaBtn" href="#">Make a donation</a></button>
+                </div>
+    
+                <!-- N:B: categories menu wrapper here -->
+                <div class="categoriesMenuWrapper">
 
+                    <!-- firt menu container -->
+                    <div class="firstMenuContainer">
+                        <div class="favoritesContainer">
+                            <img src="./assets/img/icons/favorite.svg" alt="bookmark your favorite charities">
+                            <p>Favorites</p>
+                        </div>
+
+                        <!-- left navigation arrow -->
+                        <div class="categoriesNavArrowDiv">
+                            <img class="categoriesMenuArrows" src="./assets/img/icons/blue_chevron_left.svg" alt="navigate left">
+                        </div>
+                    </div>
+
+                    <!-- charities categories container -->
+                    <div class="catmenuContainer">
+                        <div class="trendingDiv">
+                            <img src="./assets/img/icons/trending.svg" alt="trending charities">
+                            <p>Trending</p>
+                        </div>
+
+                        <div class="religiousDiv">
+                            <img src="./assets/img/icons/religious_building.svg" alt="religious charities">
+                            <p>Religious</p>
+                        </div>
+
+                        <div class="sportsDiv">
+                            <img src="./assets/img/icons/bike.svg" alt="sports charities">
+                            <p>Sports</p>
+                        </div>
+
+                        <div class="wildlifeDiv">
+                            <img src="./assets/img/icons/paw-print-selected.svg" alt="wildlife charities">
+                            <p>Wildlife</p>
+                        </div>
+                    </div>
+
+                    <!-- last menu container -->
+                    <div class="lastMenuContainer">
+
+                        <div class="right categoriesNavArrowDiv">
+                            <img class="categoriesMenuArrows" src="./assets/img/icons/blue_chevron_right.svg" alt="navigate left">
+                        </div>
+
+                        <!-- individuals charities container -->
+                        <div class="individualsContainer">
+                            <img src="./assets/img/icons/foot_prints.svg" alt="charities by individuals">
+                            <p>Individuals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section> <!-- end of hero/slider -->
+        
+        <!-- end of landing page -->
+
+        <!-- categories page starts here -->
+        <section class="categoriesPage">
+
+        </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
