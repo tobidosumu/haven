@@ -13,7 +13,7 @@
 <body>
     <main>
         <!-- header starts here -->
-        <header class="d-flex container-fluid justify-content-around align-items-center px-5">
+        <header class="sticky-top d-flex container-fluid justify-content-around align-items-center px-5">
                 
             <!-- logo div -->
             <div class="col-sm-3">
@@ -39,7 +39,7 @@
             </div>
 
             <!-- nav menu container wrapper -->
-            <div class="col-sm-5 menuContainer">
+            <div class="col-sm-5 menuContainer pl-6">
                 <!-- donate and create buttons -->
                 <nav class="d-flex align-items-center">
                     <ul class="donateNav d-flex justify-content-around my-auto">
@@ -48,13 +48,13 @@
                     </ul>
 
                     <!-- night-mode icon div -->
-                    <div class="darkModeUserIconsUlWrapper d-flex justify-content-between my-auto">
+                    <div class="darkModeUserIconsUlWrapper d-flex">
                         <ul class="my-auto darkModeIconUl">
                             <li><a href="#"><img class="darkModeIcon" src="./assets/img/icons/night_mode.png" alt="switch to dark mode"></a></li>
                         </ul>
+                        
                         <!-- menu and user icons -->
-
-                        <ul class="menuIconUserIconUl my-auto d-flex justify-content-center align-items-center"> 
+                        <ul class="menuIconUserIconUl my-auto"> 
                             <li><a href="#"><img class="menuIcon" src="./assets/img/icons/menu_bars.svg"></a></li>
                             <li><a href="#"><img class="userIcon" src="./assets/img/icons/user_icon.png"></a></li>
                         </ul>
@@ -103,8 +103,8 @@
             <!-- call to action buttons wrapper -->
             <div class="cta_btns_and_categoriesMenu_wrapper">
                 <div class="ctaBtnsWrapper">
-                    <button class="btn btn-light btn-lg rounded-pill shadow p-3 bg-white rounded ctaBtn"><a class="ctaBtn" href="#">Create a cause</a></button>
-                    <button class="btn btn-light btn-lg rounded-pill shadow p-3 bg-white rounded ctaBtn"><a class="ctaBtn" href="#">Make a donation</a></button>
+                    <button class="btn btn-light btn-lg rounded-pill shadow-sm p-3 mb-5 bg-white rounded ctaBtn"><a class="ctaBtn" href="#">Create a cause</a></button>
+                    <button class="btn btn-light btn-lg rounded-pill shadow-sm p-3 mb-5 bg-white rounded ctaBtn"><a class="ctaBtn" href="#">Make a donation</a></button>
                 </div>
     
                 <!-- N:B: categories menu wrapper here -->
@@ -234,22 +234,6 @@
                         </p>
                     </div>
                 </div>
-
-                <!-- card 5 -->
-                <div class="card">
-                    <div class="photoWrapper">
-                        <img src="./assets/img/african_boy.png" alt="Nigerian boy wants a toy">
-                        <div class="heartIcon">
-                            <img src="./assets/img/icons/red_heart.svg">
-                        </div>
-                    </div>
-                    <div class="detailsWrapper">
-                        <h2>Name</h2>
-                        <p>Donate to verified fundraisers to help individuals 
-                            and communies affected by the earthquake in  affected by..
-                        </p>
-                    </div>
-                </div>
             </div>
 
             <!-- charity feed wrapper Two -->
@@ -319,23 +303,6 @@
                                     </p>
                                 </div>
                             </div>
-            
-                            <!-- card 5 -->
-                            <div class="card">
-                                <div class="photoWrapper">
-                                    <img src="./assets/img/african_boy.png" alt="Nigerian boy wants a toy">
-                                    <div class="heartIcon">
-                                        <img src="./assets/img/icons/red_heart.svg">
-                                    </div>
-                                </div>
-                                <div class="detailsWrapper">
-                                    <h2>Name</h2>
-                                    <p>Donate to verified fundraisers to help individuals 
-                                        and communies affected by the earthquake in  affected by..
-                                    </p>
-                                </div>
-                            </div>
-                        
                         </div>
         </section>
     </main>
