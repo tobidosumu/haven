@@ -1,0 +1,29 @@
+Agenda
+
+1. What Project to Work on
+2. Assigning Project Parts 
+3. Setting Deadlines to Project Parts
+
+ 
+Areas to work on:
+1. Creating a Repo on GitHub 
+2. Branding
+3. Features
+4. Setting up mini weekly goals on Trello
+
+Project Parts Assignment
+1. Joshua -> GUI
+2. Ayo & Nike -> Frontend
+3. Tobi -> Backend
+4. Ayo - GitHub Setup
+
+
+Web App
+1. No needing for user authentication b/4 watching videos
+2. Not being able to be served specialized content if user 
+is not signed
+
+ 
+
+Document weekly goals on Trello
+

@@ -1,0 +1,197 @@
+*, p, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* my bootstrap  */
+.blackTxt {
+    color: #000 !important;
+    background-color: #fff;
+}
+
+.mt-30 {
+    margin-top: 80px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.pr-6 {
+    padding-right: 6.5%;
+}
+
+.pl-6 {
+    padding-left: 6.5%;
+}
+
+.pt-6 {
+    padding-top: 4.1%;
+}
+
+ul li::marker {
+    font-size: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li::marker {
+   color: #fff;
+}
+
+input, select {
+    outline: none;
+}
+
+/* Header */
+header {
+    height: 110px;
+    background-color: #fff;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.164);
+}
+
+/* Logo div */
+.logo {
+    width: 35%;
+}
+
+/* Style the search field */
+#selectCategories {
+    width: 68%;
+    height: 46px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-left: 5%;
+    border: none;
+    border-radius: 50px 0 0 50px;
+}
+
+.searchForm {
+    display: flex;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.searchBox {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+
+::placeholder {
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+::-ms-input-placeholder {
+    color: #000;
+}
+
+.searchBox input[type=search] {
+    width: 110%;
+    height: 46px;
+    color: #000;
+    border: none;
+    border-left: 1px solid #000;
+    padding-left: 5%;
+    margin-left: 3%;
+}
+
+.searchIcon {
+    width: 38px;
+}
+  
+.searchBtn {
+    width: 50px;
+    padding: 4px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #3FA9F5;
+    cursor: pointer; 
+}
+
+/* donate and create buttons nav starts here */
+nav .donateNav {
+    width: 50%;
+    display: flex;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav .donateNav a {
+    color: #000;
+}
+
+nav .donateNav a:hover {
+    background-color: #F5F5F5;
+    border-radius: 50px;
+}
+
+nav .donateNav li a, nav .donateNav li {
+    padding: 10px 14px;
+    margin-right: 8px;
+}
+
+nav .donateNav li:first-child {
+    border-right: 1px solid #839BB1;
+    padding-right: 0%;
+}
+
+nav .donateNav li:nth-child(2) {
+    padding-left: 0px !important;
+}
+
+/* dark mode and user icon wrapper starts here */
+.darkModeUserIconsUlWrapper {
+    width: 50%;
+}
+
+.darkModeIconUl {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+/* dark mode icon starts here */
+.darkModeIconUl img {
+    width: 45px;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #F5F5F5;
+}
+
+/* menu icon and user icon ul starts here */
+.menuIconUserIconUl {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin-left: 10%;
+    background-color: #F5F5F5;
+    border-radius: 50px;
+}
+
+.menuIconUserIconUl img {
+    width: 25px;
+}
+
+.menuIconUserIconUl li:nth-child(2) {
+    margin-left: 15%;
+}

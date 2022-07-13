@@ -1,0 +1,121 @@
+/* hero starts here */
+.hero {
+    width: 100%;
+}
+
+.slideshow a {
+    display: flex;
+    flex-wrap: wrap;
+    height: 65vh;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+/* slider arrows */
+.sliderArrowsWrapper {
+    width: 100%;
+    height: 65vh;
+    position: absolute; 
+    z-index: 2;
+    opacity: 0;
+}
+
+.sliderArrowDiv {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0 1.5px rgba(0, 0, 0, 0.5);
+}
+
+.sliderArrowDiv:nth-child(2) {
+    box-shadow: -2px 0 1.5px rgba(0, 0, 0, 0.5);
+} 
+
+.sliderArrowsWrapper:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.sliderArrowIcon {
+    width: 3rem;
+}
+
+/* slide image */
+.slideOne {
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    object-position: 0% 63%;
+    opacity: 0.6;
+}
+
+.sliderContents {
+    width: 90%;
+    position: absolute; 
+    bottom: 170px;
+    left: 5%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3em;
+    font-family: 'Roboto', 'Libre Baskerville', serif;
+}
+
+.sliderTexts {
+    width: 33%;
+    display: flex;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.sliderDotsWrapper {
+    width: 33%;
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.sliderDot {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.sliderDot:nth-child(4) {
+    background-color: #3FA9F5;
+}
+
+.emptyDiv {
+    width: 33%;
+    display: flex;
+}
+
+/* Call to action buttons and categories menu wrappper */
+.cta_btns_and_categoriesMenu_wrapper {
+    width: 100%;
+    background-color: #3FA9F5;
+}
+.ctaBtnsWrapper {
+    width: 100%;
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-around;
+    background: #3FA9F5 url("../img/bg-pc-pattern.png") no-repeat 0px -7px;
+    background-size: cover;
+}
+
+.ctaBtn {
+    font-size: 22px;
+    color: #FF1D25;
+    font-weight: 600;
+    padding: 20px 25px;
+}
+
+.ctaBtn:hover {
+    color: #3FA9F5;
+}
