@@ -61,15 +61,121 @@ header {
 }
 
 /* Style the search field */
-#selectCategories {
+.searchBox {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+
+.dropdown {
     width: 68%;
     height: 46px;
     font-size: 17px;
     font-weight: bold;
-    font-family: 'Libre Franklin', sans-serif;
-    padding-left: 5%;
-    border: none;
+    padding: 3.4% 6%;
     border-radius: 50px 0 0 50px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.dropdown > button {
+    width: 110%;
+    border: none;
+    background: none;
+}
+
+.dropdown > button > img {
+    width: 15px;
+}
+
+.contentHover {
+    width: 145px;
+    height: 20px;
+    left: 0px;
+    position: absolute;
+}
+
+.dropdownContentsWrapper {
+    visibility: hidden;
+    width: 385px;
+    height: 220px;
+    margin-top: 20px;
+    position: absolute;
+    left: 0px;
+    border-radius: 10px;    
+    overflow: hidden;
+    background-color: rgba(63, 169, 245, 0.8);
+}
+
+.dropdown:hover .contentHover .dropdownContentsWrapper {
+    visibility: visible;
+}
+
+.dropdownContents {
+    width: 85%;
+    height: 85%;
+    overflow-y: scroll;
+}
+
+/* scrollbar styling */
+
+/* width */
+.dropdownContents::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+.dropdownContents::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.808);
+    border-radius: 50px;
+}
+
+/* Handle */
+.dropdownContents::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.822);
+}
+
+/* Handle on hover */
+.dropdownContents::-webkit-scrollbar-thumb:hover {
+    background: #F5F5F5;
+}
+
+/* Handle */
+.dropdownContents::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+}
+
+.dropdownContents > a {
+    width: 90%;
+    display: flex;
+    font-size: .9em;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 10% auto;
+    padding: 1% 0;
+}
+
+.dropdownContents > a:hover {
+    text-decoration: underline;
+}
+
+.dropdownContents > a:first-child {
+    padding-top: 0%;
+    margin-top: 7%;
+}
+
+.dropdownContents > a:last-child {
+    margin-bottom: 7%;
+    padding-bottom: 0%;
+}
+
+.dropdownContents > a > div > img {
+    width: 22px;
+    margin-right: 20px;
+}
+
+.dropdownContents > a:first-child > div > img {
+    width: 18px;
 }
 
 .searchForm {
@@ -77,14 +183,11 @@ header {
     width: 100%;
     border-radius: 50px;
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #839bb1;
 }
 
-.searchBox {
-    display: flex;
-    width: 100%;
-    height: 40px;
-    border: none;
+.searchForm:hover {
+    border: 1px solid #000;
 }
 
 ::placeholder {
@@ -104,9 +207,8 @@ header {
     height: 46px;
     color: #000;
     border: none;
-    border-left: 1px solid #000;
+    border-left: 1px solid #839bb1;
     padding-left: 5%;
-    margin-left: 3%;
 }
 
 .searchIcon {
@@ -149,7 +251,7 @@ nav .donateNav li a, nav .donateNav li {
 }
 
 nav .donateNav li:first-child {
-    border-right: 1px solid #839BB1;
+    border-right: 1px solid #839bb165;
     padding-right: 0%;
 }
 
@@ -177,21 +279,96 @@ nav .donateNav li:nth-child(2) {
 }
 
 /* menu icon and user icon ul starts here */
-.menuIconUserIconUl {
-    display: flex;
+.menuDropdown {
     width: 50%;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    margin-left: 10%;
-    background-color: #F5F5F5;
+    height: 60px;
+}
+
+.menuDropdown:hover .userProfileWrapper {
+    visibility: visible;
+}
+
+.menuDropdown:hover .menuIconUserIconUl {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menuIconUserIconUl {
+    width: 100%;
+    padding: 10px 5px;
     border-radius: 50px;
+    background-color: #ffffff;
+    border: 1px solid #839bb165;
 }
 
 .menuIconUserIconUl img {
-    width: 25px;
+    width: 23px;
 }
 
-.menuIconUserIconUl li:nth-child(2) {
-    margin-left: 15%;
+.menuIconUserIconUl li:nth-child(2) a img {
+    width: 22px;
+    margin-left: 15px;
+}
+
+/* user profile dropdown starts here */
+
+.userProfileWrapper {
+    /* visibility: hidden; */
+    position: absolute;
+    top: 85px;
+    right: 18px;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: rgba(63, 169, 245, 0.8);
+}
+
+.userProfileWrapper > img {
+    width: 18px;
+    height: 12px;
+    position: absolute;
+    top: -12px;
+    right: 15px;
+}
+
+.userPhotonameCon {
+    width: 100%;
+    height: 55%;
+}
+
+.userPhotonameCon > div {
+    width: 100%;
+    height: 60%;
+}
+
+.userPhotonameCon > div > a > img {
+    width: 50%;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.userPhotonameCon > p > a {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.userPhotonameCon > p > a:hover {
+    text-decoration: underline;
+}
+
+.userProfileMenu {
+    width: 100%;
+    height: 45%;
+    padding-top: 7px;
+    border-top: .01em solid rgba(255, 255, 255, 0.8);    
+}
+
+.userProfileMenu > ul > a > li {
+    color: #ffffff;
+    font-size: 1em;    
+    padding: 2px 14px;
+    margin: 10px 0;
+}
+
+.userProfileMenu > ul > a:hover li {
+    text-decoration: underline;
 }
