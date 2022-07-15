@@ -24,17 +24,24 @@
         <div class="col-sm-4 searchContainer">
             <form class="searchForm" action="action_page.php">
                 <div class="searchBox">
-                    <select name="categories" id="selectCategories">
-                        <option value="default">Categories</option>
-                        <option value="trending">Trending</option>
-                        <option value="religious">Religious</option>
-                        <option value="sports">Sports</option>
-                        <option value="wildlife">Wildlife</option>
-                        <option value="individuals">Individuals</option>
-                    </select>
+                    <div class="dropdown">
+                        <button class="d-flex justify-content-between align-items-center">Categories <img src="./assets/img/icons/chevron_down.png"></button>
+                        <div class="contentHover">
+                            <div class="dropdownContentsWrapper d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/icons/upArrow.png">
+                                <div class="dropdownContents">
+                                    <a href="#"><div><img src="./assets/img/icons/trendingDropdown.png">Trending</div></a>
+                                    <a href="#"><div><img src="./assets/img/icons/religiousDropdown.png">Religious</div></a>
+                                    <a href="#"><div><img src="./assets/img/icons/sportsDropdown.png">Sports</div></a>
+                                    <a href="#"><div><img src="./assets/img/icons/wildlifeDropdown.png">Wildlife</div></a>
+                                    <a href="#"><div><img src="./assets/img/icons/individualsDropdown.png">Individuals</div></a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
                     <input type="search" placeholder="search for a charity..." name="search">
                 </div>
-                <button class="searchBtn" type="submit"><img class="searchIcon" src="./assets/img/icons/magnifying_lens.png" alt=""></i></button>
+                <button class="searchBtn" type="submit"><img class="searchIcon" src="./assets/img/icons/magnifying_lens.png"></i></button>
             </form>
         </div>
 
@@ -54,10 +61,26 @@
                     </ul>
                     
                     <!-- menu and user icons -->
-                    <ul class="menuIconUserIconUl my-auto"> 
-                        <li><a href="#"><img class="menuIcon" src="./assets/img/icons/menu_bars.svg"></a></li>
-                        <li><a href="#"><img class="userIcon" src="./assets/img/icons/user_icon.png"></a></li>
-                    </ul>
+                    <div class="menuDropdown d-flex align-items-center justify-content-center ml-4">
+                        <ul class="menuIconUserIconUl d-flex align-items-center justify-content-center my-auto"> 
+                            <li><a href="#"><img class="menuIcon" src="./assets/img/icons/menu_bars.svg"></a></li>
+                            <li><a href="#"><img class="userIcon" src="./assets/img/icons/user_icon.png"></a></li>
+                        </ul>
+                        <div class="userProfileWrapper d-flex align-items-center flex-column">
+                            <img src="./assets/img/icons/upArrow.png">
+                            <div class="userPhotonameCon d-flex align-items-center justify-content-center flex-column">
+                                <div class="d-flex align-items-center justify-content-center flex-column"><a href="#"><img class="d-flex" src="./assets/img/moji.png"></a></div>
+                                <p><a href="#">Mojisola Badmus</a></p>
+                            </div>
+                            <div class="userProfileMenu d-flex align-items-center justify-content-center flex-column text-center">
+                                <ul>
+                                    <a href="#"><li>Sign in</li></a>
+                                    <a href="#"><li>Sign up</li></a>
+                                    <a href="#"><li>F.A.Q.</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav> 
         </div>

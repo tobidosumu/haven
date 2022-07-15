@@ -104,6 +104,7 @@ header {
     left: 0px;
     border-radius: 10px;    
     background-color: rgba(63, 169, 245, 0.8);
+    box-shadow: 0px 0px 4px rgba(107, 98, 98, 0.2);
 }
 
 .dropdown:hover .contentHover .dropdownContentsWrapper {
@@ -308,6 +309,7 @@ nav .donateNav li:nth-child(2) {
     border-radius: 50px;
     background-color: #ffffff;
     border: 1px solid #839bb165;
+    
 }
 
 .menuIconUserIconUl img {
@@ -330,6 +332,7 @@ nav .donateNav li:nth-child(2) {
     height: 320px;
     border-radius: 10px;
     background-color: rgba(63, 169, 245, 0.8);
+    box-shadow: 0px 0px 4px rgba(107, 98, 98, 0.2);
 }
 
 .userProfileWrapper > img {
