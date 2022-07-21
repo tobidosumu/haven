@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 1.79% 4.6%;
+    background: #fff url("../img/howMuchBg.png") no-repeat -10px 0;
+    background-size: cover;
+}
+
+*, p, h1, h2, h3, h4, a:hover  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.leftWrapper {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftWrapper > div {
+    height: 80px;
+}
+
+.headlessLogo {
+    width: 17.8%;
+}
+
+.pageInfo {
+    width: 60%;
+    justify-content: center;
+    height: 100vh !important;
+    padding-bottom: 10%;
+}
+
+.pageInfo_h2 {
+    width: 80%;
+    font-size: 1.6em;
+    font-weight: 700;
+    padding-bottom: 2%;
+}
+
+.pageInfo p {
+    font-size: 1.6em;
+    padding-top: 3%;
+}
+
+.rightWrapper {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4% 0 0 3%;
+}
+
+.inputBox > input {
+    width: 65%;
+    padding: 14px;
+    border-radius: 50px;
+    border: 1px solid #525d68;
+}
+
+.rightWrapper > div:nth-child(3) {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pageInfo_btnBox > button {
+    background-color: #3FA9F5 !important;
+}
+
+.pageInfo_btnBox > button > a {
+    color: #ffffff !important;
+}

@@ -1,0 +1,57 @@
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Libre Franklin', sans-serif, 'Libre Baskerville', serif;
+    background: #ffffff url("../img/icons/teamBg.png") no-repeat -40px 0px;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+.team > div {
+    padding-top: 5%;
+}
+
+section > div > h1 {
+    color: #3FA9F5;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+section > div > h3 {
+    color: #000;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+.teamDetails {
+    width: 90%;
+    padding-top: 5%;
+}
+
+.teamDetails > div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teamDetails > div > img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.teamDetails > div > h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 7% 5% 3%;
+    text-align: center;
+}
+
+.teamDetails > div > p a {
+    font-size: 1.1em;
+    color: #000;
+}
+
+.teamDetails > div > p a:hover {
+    color: #3FA9F5;
+}
